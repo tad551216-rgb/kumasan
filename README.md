@@ -23,7 +23,7 @@ https://tad551216-rgb.github.io/tsukuru-techo/kuma-hide/
 
 ## 注意
 
-更新時は `sw.js` の `CACHE='tt-kuma-hide-v1'` を v2, v3 と上げてください。
+更新時は `sw.js` の `CACHE='tt-kuma-hide-v2'` を v2, v3 と上げてください。
 古いPWAキャッシュ対策です。
 
 ## 戻るリンク
@@ -31,3 +31,8 @@ https://tad551216-rgb.github.io/tsukuru-techo/kuma-hide/
 ゲーム内の「つくる手帖へ戻る」は以下へ固定しています。
 
 https://tad551216-rgb.github.io/tsukuru-techo/
+
+
+## v2 修正
+
+ゲーム終了直後の誤タップ防止として、「もう一度遊ぶ」と「つくる手帖へ戻る」の両方を1.2秒間押せないようにしました。
