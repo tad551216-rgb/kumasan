@@ -44,3 +44,8 @@ const CACHE='tt-kuma-tap-v2';
 ```
 
 これをしないと、古いゲーム画面が表示され続けることがあります。
+
+
+## 修正メモ
+
+ゲーム終了画面の「← つくる手帖へ戻る」は、GitHub Pages のルートではなく、公開中のトップページ `https://tad551216-rgb.github.io/tsukuru-techo/` へ戻るように修正済みです。
