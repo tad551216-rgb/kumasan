@@ -1,58 +1,33 @@
-# つくる手帖 くまさん叩き in 秋田市
+# つくる手帖 くまさん叩き in 秋田市市街地 かくれ場所版
 
-スマホで遊べる PWA 形式のミニゲームです。
-秋田市市街地をイメージした背景で、穴から出てくるくまさんをタッチして得点します。
+PWA対応のスマホゲームです。
+クマが木の後ろ、植え込み、石の陰、下水路、排水溝から出てきます。
 
-## 内容
+## ファイル構成
 
-- `index.html` ゲーム本体
-- `manifest.webmanifest` PWA設定
-- `sw.js` オフライン用サービスワーカー
-- `icon-192.png`
-- `icon-512.png`
-- `icon-maskable-512.png`
-- `apple-touch-icon.png`
+- index.html
+- manifest.webmanifest
+- sw.js
+- icon-192.png
+- icon-512.png
+- icon-maskable-512.png
+- apple-touch-icon.png
 
-## 公開方法
+## 設置方法
 
-GitHub Pages で公開する場合は、任意のフォルダ、例：
-
-```text
-kuma-tap/
-```
-
-にこの一式を入れてください。
+例：つくる手帖リポジトリ内に `kuma-hide/` フォルダを作り、この中身をアップロードします。
 
 公開URL例：
 
-```text
-https://ユーザー名.github.io/tsukuru-techo/kuma-tap/
-```
+https://tad551216-rgb.github.io/tsukuru-techo/kuma-hide/
 
-## トップページからのリンク例
+## 注意
 
-```html
-<a href="./kuma-tap/">くまさん叩きで遊ぶ</a>
-```
+更新時は `sw.js` の `CACHE='tt-kuma-hide-v1'` を v2, v3 と上げてください。
+古いPWAキャッシュ対策です。
 
-## 更新時の注意
+## 戻るリンク
 
-`sw.js` のキャッシュ名を変更してください。
+ゲーム内の「つくる手帖へ戻る」は以下へ固定しています。
 
-```js
-const CACHE='tt-kuma-tap-v2';
-```
-
-これをしないと、古いゲーム画面が表示され続けることがあります。
-
-
-## 修正メモ
-
-ゲーム終了画面の「← つくる手帖へ戻る」は、GitHub Pages のルートではなく、公開中のトップページ `https://tad551216-rgb.github.io/tsukuru-techo/` へ戻るように修正済みです。
-
-
-## 2026-06-27 修正 v3
-
-「つくる手帖へ戻る」ボタンについて、HTMLのhrefだけでなくJavaScript側でも `location.replace('https://tad551216-rgb.github.io/tsukuru-techo/')` に固定しました。サービスワーカーのキャッシュ名も `tt-kuma-tap-v3` に上げています。
-
-反映されない場合は、Safariでページを再読み込みするか、URL末尾に `?v=3` を付けて開いてください。
+https://tad551216-rgb.github.io/tsukuru-techo/
