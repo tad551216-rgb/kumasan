@@ -49,3 +49,10 @@ const CACHE='tt-kuma-tap-v2';
 ## 修正メモ
 
 ゲーム終了画面の「← つくる手帖へ戻る」は、GitHub Pages のルートではなく、公開中のトップページ `https://tad551216-rgb.github.io/tsukuru-techo/` へ戻るように修正済みです。
+
+
+## 2026-06-27 修正 v3
+
+「つくる手帖へ戻る」ボタンについて、HTMLのhrefだけでなくJavaScript側でも `location.replace('https://tad551216-rgb.github.io/tsukuru-techo/')` に固定しました。サービスワーカーのキャッシュ名も `tt-kuma-tap-v3` に上げています。
+
+反映されない場合は、Safariでページを再読み込みするか、URL末尾に `?v=3` を付けて開いてください。
